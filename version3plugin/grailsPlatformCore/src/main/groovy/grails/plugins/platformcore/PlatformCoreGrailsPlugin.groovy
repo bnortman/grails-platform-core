@@ -15,6 +15,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package grails.plugins.platformcore
+
 import grails.util.Holders
 import org.grails.plugin.platform.config.PluginConfigurationFactory
 import org.grails.plugin.platform.conventions.ConventionsImpl
@@ -30,8 +32,8 @@ import org.grails.plugin.platform.security.SecurityImpl
 import org.grails.plugin.platform.ui.UiExtensions
 
 class PlatformCoreGrailsPlugin {
-    def version = "1.0.1-SNAPSHOT"
-    def grailsVersion = "1.3 > *"
+    def version = "3.0.0-SNAPSHOT"
+    def grailsVersion = "3.0.9 > *"
     def pluginExcludes = [
             "grails-app/conf/Test*.groovy",
             "grails-app/i18n/test.properties",
@@ -45,6 +47,7 @@ class PlatformCoreGrailsPlugin {
 
     def observe = ['*'] // We observe everything so we can re-apply dynamic methods, conventions etc
 
+    def profiles = ['web']
     def watchedResources = [
             "file:./grails-app/conf/*Navigation.groovy",
             "file:./grails-app/conf/*Events.groovy",
@@ -80,6 +83,7 @@ class PlatformCoreGrailsPlugin {
 
     def issueManagement = [system: "JIRA", url: "http://jira.grails.org/browse/GPPLATFORMCORE"]
 
+    // TODO: Change scm URL to GitHub
     def scm = [url: "https://github.com/grails-plugins/grails-platform-core"]
 
     boolean platformInitialized
