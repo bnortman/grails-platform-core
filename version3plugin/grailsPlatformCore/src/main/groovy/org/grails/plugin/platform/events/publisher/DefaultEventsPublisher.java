@@ -17,15 +17,9 @@
  */
 package org.grails.plugin.platform.events.publisher;
 
+import grails.persistence.support.PersistenceContextInterceptor;
 import groovy.lang.Closure;
-
-import java.util.Map;
-import java.util.concurrent.Callable;
-import java.util.concurrent.Future;
-import java.util.concurrent.TimeUnit;
-
 import org.apache.log4j.Logger;
-import org.codehaus.groovy.grails.support.PersistenceContextInterceptor;
 import org.grails.plugin.platform.events.EventMessage;
 import org.grails.plugin.platform.events.EventReply;
 import org.grails.plugin.platform.events.registry.DefaultEventsRegistry;
@@ -35,6 +29,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.core.task.AsyncTaskExecutor;
+
+import java.util.Map;
+import java.util.concurrent.Callable;
+import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author Stephane Maldini <smaldini@vmware.com>
