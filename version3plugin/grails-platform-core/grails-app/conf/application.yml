@@ -2,7 +2,7 @@
 grails:
     profile: web-plugin
     codegen:
-        defaultPackage: grailsplatformcore
+        defaultPackage: grails-platform-core
 info:
     app:
         name: '@info.app.name@'
