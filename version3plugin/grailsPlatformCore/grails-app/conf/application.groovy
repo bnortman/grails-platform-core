@@ -1,11 +1,3 @@
-log4j = {
-    error 'org.codehaus.groovy.grails',
-          'org.springframework',
-          'org.hibernate',
-          'net.sf.ehcache.hibernate'
-    debug 'org.grails.plugin.platform.navigation', 'grails.app'
-}
-
 grails.doc.title = "Grails Platform Core"
 grails.doc.subtitle = "Provides the Platform Core APIs and Tags"
 grails.doc.images = new File("resources/img")
