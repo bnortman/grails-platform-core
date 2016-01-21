@@ -28,13 +28,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author Stephane Maldini <smaldini@vmware.com>
+ * @author Stephane Maldini (smaldini@vmware.com)
  * @version 1.0
- * @file
- * @date 29/05/12
- * @section DESCRIPTION
- * <p/>
- * [Does stuff]
+ * date: 29/05/12
  */
 public class GormBridgePublisher implements ApplicationListener<ApplicationEvent> {
 

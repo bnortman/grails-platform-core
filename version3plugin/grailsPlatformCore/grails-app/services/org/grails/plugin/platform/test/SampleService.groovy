@@ -21,14 +21,9 @@ import grails.events.Listener
 import org.grails.plugin.platform.events.EventMessage
 
 /**
- * @file
- * @author Stephane Maldini <smaldini@vmware.com>
+ * @author Stephane Maldini (smaldini@vmware.com)
  * @version 1.0
- * @date 02/01/12
-
- * @section DESCRIPTION
- *
- * [Does stuff]
+ * date: 02/01/12
  */
 class SampleService {
 

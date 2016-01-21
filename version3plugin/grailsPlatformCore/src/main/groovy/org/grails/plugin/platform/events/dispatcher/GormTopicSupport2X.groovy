@@ -18,13 +18,9 @@
 package org.grails.plugin.platform.events.dispatcher
 
 /**
- * @author Stephane Maldini <smaldini@vmware.com>
+ * @author Stephane Maldini (smaldini@vmware.com)
  * @version 1.0
- * @file
- * @date 03/01/12
- * @section DESCRIPTION
- * <p/>
- * [Does stuff]
+ * date: 03/01/12
  */
 class GormTopicSupport2X implements GormTopicSupport {
 

@@ -36,13 +36,9 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author Stephane Maldini <smaldini@vmware.com>
+ * @author Stephane Maldini (smaldini@vmware.com)
  * @version 1.0
- * @file
- * @date 16/01/12
- * @section DESCRIPTION
- * <p/>
- * [Does stuff]
+ * date: 16/01/12
  */
 public class DefaultEventsPublisher implements EventsPublisher, ApplicationContextAware, InitializingBean {
 

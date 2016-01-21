@@ -18,14 +18,9 @@
 package org.grails.plugin.platform.test
 
 /**
- * @file
- * @author Stephane Maldini <smaldini@vmware.com>
+ * @author Stephane Maldini (smaldini@vmware.com)
  * @version 1.0
- * @date 03/01/12
-
- * @section DESCRIPTION
- *
- * [Does stuff]
+ * date: 03/01/12
  */
 class Book {
 

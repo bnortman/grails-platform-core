@@ -18,12 +18,9 @@
 package org.grails.plugin.platform.test
 
 /**
- * @file
- * @author Stephane Maldini <smaldini@vmware.com>
+ * @author Stephane Maldini (smaldini@vmware.com)
  * @version 1.0
- * @date 02/01/12
-
- * @section DESCRIPTION
+ * date: 02/01/12
  *
  * [Does stuff]
  */

@@ -18,14 +18,9 @@
 package org.grails.plugin.platform.events
 
 /**
- * @file
- * @author Stephane Maldini <smaldini@vmware.com>
+ * @author Stephane Maldini (smaldini@vmware.com)
  * @version 1.0
- * @date 14/05/12
-
- * @section DESCRIPTION
- *
- * [Does stuff]
+ * date: 14/05/12
  */
 class EventDefinition implements Comparable<EventDefinition> {
     String topic
