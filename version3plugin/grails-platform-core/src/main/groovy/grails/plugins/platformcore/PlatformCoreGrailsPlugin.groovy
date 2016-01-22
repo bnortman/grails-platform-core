@@ -173,7 +173,7 @@ class PlatformCoreGrailsPlugin {
             grailsEventsPublisher(DefaultEventsPublisher) {
                 grailsEventsRegistry = ref('grailsEventsRegistry')
                 persistenceInterceptor = ref("persistenceInterceptor")
-                catchFlushExceptions = config.events.catchFlushExceptions
+                catchFlushExceptions = config.events.catchFlushExceptions.isSet ?: false
             }
 
             grailsEvents(EventsImpl) {
