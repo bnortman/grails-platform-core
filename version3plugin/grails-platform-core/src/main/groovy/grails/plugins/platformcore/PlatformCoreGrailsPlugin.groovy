@@ -134,7 +134,7 @@ class PlatformCoreGrailsPlugin {
         }
 
         def deployed = application.warDeployed
-        def grailsVersion = application.metadata['app.grails.version']
+        def grailsVersion = application.metadata['info.app.grailsVersion']
 
         // Security API
         if (!config.security.disabled) {
