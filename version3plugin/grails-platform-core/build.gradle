@@ -60,6 +60,10 @@ dependencies {
     provided "org.grails:grails-dependencies"
     provided 'javax.servlet:javax.servlet-api:3.1.0'
 
+    runtime "org.grails.plugins:hibernate"
+    runtime "org.grails.plugins:cache"
+    runtime "org.hibernate:hibernate-ehcache"
+
     testCompile "org.grails:grails-plugin-testing"
 
     console "org.grails:grails-console"
@@ -67,4 +71,12 @@ dependencies {
 
 task wrapper(type: Wrapper) {
     gradleVersion = gradleWrapperVersion
+}
+
+jar {
+    exclude ([
+            'org/grails/plugin/platform/test',
+            'test.properties',
+            'Test*.groovy'
+    ])
 }
