@@ -48,6 +48,19 @@ class PluginUtils {
         def appPlugin = findAppPlugin(applicationContext)
         def pluginAnnotation = clazz.getAnnotation(GrailsPlugin)
 
+        //TODO: PWW: Find best way to map BootStrap file to a plugin
+        def pluginByClass = applicationContext.pluginManager.allPlugins.find {
+            def pluginName = it.name
+            def className = clazz.name
+            pluginName == className
+            if (className == "PlatformCoreBootStrap" && pluginName == "platformCore") {
+                return it
+            }
+        }
+        if (pluginByClass) {
+            return pluginByClass.name
+        }
+
         if (pluginAnnotation || appPlugin) {
             return pluginAnnotation ?
                 GrailsNameUtils.getPropertyNameForLowerCaseHyphenSeparatedName(pluginAnnotation.name()) :
