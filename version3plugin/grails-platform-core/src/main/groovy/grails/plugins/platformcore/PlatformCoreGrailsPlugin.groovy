@@ -35,6 +35,7 @@ class PlatformCoreGrailsPlugin {
     def version = "3.0.0-SNAPSHOT"
     def grailsVersion = "3.0.9 > *"
     def pluginExcludes = [
+            'org/grails/plugin/platform/test/**/*',
             "grails-app/conf/Test*.groovy",
             "grails-app/i18n/test.properties",
             "grails-app/domain/org/grails/plugin/platform/test/**/*.groovy",
