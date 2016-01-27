@@ -1,8 +1,11 @@
+Thumbs.db
 .DS_Store
-/PlatformCore.sublime-workspace
-/plugin.xml
-*.log
-target
+.gradle
+build/
+.idea
+*.iml
+*.ipr
+*.iws
+.project
 .settings
-*.zip
-web-app/WEB-INF
+.classpath
