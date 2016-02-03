@@ -30,10 +30,23 @@ class PluginUtils {
         allPlugins.find { it.basePlugin }
     }
 
+    static pluginOfProvidedArtifact(providedArtifact, applicationContext) {
+        def allPlugins = applicationContext.pluginManager.allPlugins
+        for (candidatePlugin in allPlugins) {
+            for (candidateArtefact in candidatePlugin.providedArtefacts) {
+                if (candidateArtefact == providedArtifact) {
+                    return candidatePlugin
+                }
+            }
+        }
+        return null
+    }
+
     /**
      * Work out which Grails plugin (if any) defined the class of the object supplied
      */
     static String getNameOfDefiningPlugin(applicationContext, object) {
+        // TODO: This gets called a lot.  Create a cache
         def originalObject = object
         Class clazz
         if (object instanceof Class) {
@@ -47,26 +60,17 @@ class PluginUtils {
 
         def appPlugin = findAppPlugin(applicationContext)
         def pluginAnnotation = clazz.getAnnotation(GrailsPlugin)
+        def providingPlugin = pluginOfProvidedArtifact(object, applicationContext)
 
-        //TODO: PWW: Find best way to map BootStrap file to a plugin
-        def pluginByClass = applicationContext.pluginManager.allPlugins.find {
-            def pluginName = it.name
-            def className = clazz.name
-            pluginName == className
-            if (className == "PlatformCoreBootStrap" && pluginName == "platformCore") {
-                return it
-            }
+        if (pluginAnnotation) {
+            return GrailsNameUtils.getPropertyNameForLowerCaseHyphenSeparatedName(pluginAnnotation.name())
         }
-        if (pluginByClass) {
-            return pluginByClass.name
+        if (appPlugin) {
+            return appPlugin.name
         }
-
-        if (pluginAnnotation || appPlugin) {
-            return pluginAnnotation ?
-                GrailsNameUtils.getPropertyNameForLowerCaseHyphenSeparatedName(pluginAnnotation.name()) :
-                appPlugin.name
-        } else {
-            return null
+        if (providingPlugin) {
+            return providingPlugin.name
         }
+        return null
     }
 }
