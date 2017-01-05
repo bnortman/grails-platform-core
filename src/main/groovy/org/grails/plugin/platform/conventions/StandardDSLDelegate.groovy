@@ -17,7 +17,7 @@
  */
 package org.grails.plugin.platform.conventions
 
-import org.grails.commons.GrailsApplication
+import grails.core.GrailsApplication
 import org.slf4j.LoggerFactory
 
 /**

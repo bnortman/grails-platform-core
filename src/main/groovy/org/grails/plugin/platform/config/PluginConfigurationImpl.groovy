@@ -20,7 +20,7 @@ package org.grails.plugin.platform.config
 import grails.util.Environment
 import grails.util.GrailsNameUtils
 
-import org.grails.commons.GrailsDomainClass
+import grails.core.GrailsDomainClass
 import org.grails.plugin.platform.util.ClosureInvokingScript
 import org.grails.plugin.platform.util.PluginUtils
 import org.slf4j.LoggerFactory

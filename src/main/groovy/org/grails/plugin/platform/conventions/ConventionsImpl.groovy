@@ -21,7 +21,7 @@ import grails.util.GrailsNameUtils
 
 import java.lang.reflect.Modifier
 
-import org.grails.commons.GrailsClass
+import grails.core.GrailsClass
 import org.slf4j.LoggerFactory
 
 /**

@@ -19,7 +19,7 @@ package org.grails.plugin.platform.util
 
 import grails.util.GrailsNameUtils
 
-import org.grails.plugins.metadata.GrailsPlugin
+import grails.plugins.GrailsPlugin
 
 class PluginUtils {
     /**

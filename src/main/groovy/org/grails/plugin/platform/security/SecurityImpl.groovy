@@ -17,7 +17,7 @@
  */
 package org.grails.plugin.platform.security
 
-import org.grails.commons.GrailsDomainClass
+import grails.core.GrailsDomainClass
 import org.slf4j.LoggerFactory
 import org.springframework.context.ApplicationContext
 import org.springframework.context.ApplicationContextAware

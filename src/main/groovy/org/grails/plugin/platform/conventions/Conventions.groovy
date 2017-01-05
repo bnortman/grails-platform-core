@@ -17,7 +17,7 @@
  */
 package org.grails.plugin.platform.conventions
 
-import org.grails.commons.GrailsClass
+import grails.core.GrailsClass
 
 /**
  * Public interface for convention evaluation and overrides
