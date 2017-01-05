@@ -17,7 +17,7 @@
  */
 package org.grails.plugin.platform.navigation;
 
-import grails.core.AbstractGrailsClass;
+import org.grails.core.AbstractGrailsClass;
 
 public class DefaultNavigationClass extends AbstractGrailsClass implements NavigationClass {
     public DefaultNavigationClass(Class<?> clazz) {

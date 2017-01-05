@@ -25,7 +25,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
-import org.grails.support.PersistenceContextInterceptor;
+import grails.persistence.support.*;
 import org.grails.plugin.platform.events.EventMessage;
 import org.grails.plugin.platform.events.EventReply;
 import org.grails.plugin.platform.events.registry.DefaultEventsRegistry;

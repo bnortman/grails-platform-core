@@ -29,6 +29,7 @@ import org.grails.plugin.platform.injection.InjectionImpl
 import org.grails.plugin.platform.navigation.NavigationImpl
 import org.grails.plugin.platform.security.SecurityImpl
 import org.grails.plugin.platform.ui.UiExtensions
+import grails.plugins.*
 
 
 class PlatformCoreGrailsPlugin extends Plugin {
