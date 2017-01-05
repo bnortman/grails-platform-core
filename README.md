@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/grails-plugins/grails-platform-core.svg)](https://travis-ci.org/grails-plugins/grails-platform-core)
 
+# NON-WORKING AT THIS POINT
+
 # Grails Plugin Platform -> Upgrade to Grails 3.2.4+ and Java 8
 
 I'm currently having issues with 
