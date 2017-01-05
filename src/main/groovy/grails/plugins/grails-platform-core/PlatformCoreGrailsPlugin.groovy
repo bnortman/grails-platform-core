@@ -33,7 +33,7 @@ import grails.plugins.*
 
 
 class PlatformCoreGrailsPlugin extends Plugin {
-    def version = "1.0.1-SNAPSHOT"
+    def version = "3.2.4-SNAPSHOT"
     def grailsVersion = "3.2.4"
     def pluginExcludes = [
             "grails-app/conf/Test*.groovy",

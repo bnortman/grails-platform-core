@@ -21,7 +21,7 @@ import grails.test.*
 import spock.lang.*
 
 import grails.util.Holders
-import org.grails.plugins.GrailsPluginManager
+import grails.plugins.GrailsPluginManager
 import org.grails.plugin.platform.util.ClosureInvokingScript
 
 class PluginConfigurationSpec extends Specification {
