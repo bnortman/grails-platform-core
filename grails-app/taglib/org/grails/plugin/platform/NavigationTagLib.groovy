@@ -40,7 +40,6 @@ class NavigationTagLib {
     ]
     
     def grailsNavigation
-    def grailsApplication
 
     /**
      * Render a primary navigation menu
