@@ -85,3 +85,20 @@ grailsPublish {
 assets {
     packagePlugin = true
 }
+
+ext {
+	artifactRepoBase = "https://nexus.spireon.com/nexus/content/repositories"
+}
+
+publishing {
+	repositories {
+		maven {
+			name "spireon"
+			url "${artifactRepoBase}/${project.version.endsWith('-SNAPSHOT') ? 'spireon-snapshot' : 'spireon-release'}"
+			credentials {
+				username nexusUsername
+				password nexusPassword
+			}
+		}
+	}
+}

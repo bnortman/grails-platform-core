@@ -23,13 +23,13 @@ import org.grails.plugin.platform.events.EventMessage;
 import org.grails.plugin.platform.events.EventReply;
 
 /**
- * @author Stephane Maldini <smaldini@vmware.com>
+ * @author Stephane Maldini {@literal <smaldini@vmware.com>}
  * @version 1.0
- * @file
- * @date 02/01/12
- * @section DESCRIPTION
- * <p/>
+ * date 02/01/12
+ * section DESCRIPTION
+ * <p>
  * [Does stuff]
+ * </p>
  */
 public interface EventsPublisher {
 
