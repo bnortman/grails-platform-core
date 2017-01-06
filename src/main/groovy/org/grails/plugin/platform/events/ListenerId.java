@@ -26,13 +26,13 @@ import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 
 /**
- * @author Stephane Maldini <smaldini@vmware.com>
+ * @author Stephane Maldini {@literal <smaldini@vmware.com>}
  * @version 1.0
- * @file
- * @date 09/01/12
- * @section DESCRIPTION
- * <p/>
+ * date 09/01/12
+ * section DESCRIPTION
+ * <p>
  * format : namespace://topic:package.Class#method@hashCode
+ * </p>
  */
 public class ListenerId implements Serializable {
 
